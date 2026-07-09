@@ -1,255 +1,274 @@
 <!DOCTYPE html>
 <html lang="sw">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>KaziPro</title>
+    <title>KaziPro - Ajira Tanzania</title>
 
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
-
-body{
-    background:#f5f7fb;
-    color:#222;
-    padding-bottom:80px;
-}
-
-
-/* Header */
-
-.header{
-    background:#0066FF;
-    color:white;
-    padding:25px;
-    border-radius:0 0 25px 25px;
-}
-
-.logo{
-    font-size:28px;
-    font-weight:bold;
-}
-
-.logo span{
-    color:#FF8A00;
-}
-
-
-/* Search */
-
-.search{
-    margin-top:20px;
-    background:white;
-    padding:15px;
-    border-radius:15px;
-}
-
-.search input{
-    width:100%;
-    border:none;
-    outline:none;
-    font-size:16px;
-}
-
-
-/* Cards */
-
-.container{
-    padding:20px;
-}
-
-.title{
-    margin-bottom:15px;
-}
-
-
-.job-card{
-    background:white;
-    padding:18px;
-    border-radius:18px;
-    margin-bottom:15px;
-    box-shadow:0 5px 15px #ddd;
-}
-
-.job-card h3{
-    color:#0066FF;
-}
-
-.location{
-    color:#777;
-    margin:8px 0;
-}
-
-
-.btn{
-    background:#FF8A00;
-    color:white;
-    border:none;
-    padding:10px 20px;
-    border-radius:20px;
-}
-
-
-/* Bottom Navigation */
-
-.bottom-nav{
-
-    position:fixed;
-    bottom:0;
-    left:0;
-    width:100%;
-    height:70px;
-    background:white;
-    display:flex;
-    justify-content:space-around;
-    align-items:center;
-    box-shadow:0 -3px 15px #ddd;
-
-}
-
-
-.nav-item{
-    text-align:center;
-    color:#777;
-    font-size:13px;
-}
-
-
-.nav-item span{
-    display:block;
-}
-
-
-.active{
-    color:#0066FF;
-    font-weight:bold;
-}
-
-
-</style>
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
-
 
 <body>
 
 
-<div class="header">
+<!-- HEADER -->
 
-<div class="logo">
-Kazi<span>Pro</span>
-</div>
+<header class="header">
 
-<p>Unganishwa na Fursa. Jenga Kazi Yako.</p>
+    <div class="top-bar">
 
+        <div class="logo">
+            Kazi<span>Pro</span>
+        </div>
 
-<div class="search">
+        <a href="post-job.html" class="post-btn">
+            ➕ Post Job
+        </a>
 
-<input placeholder="🔍 Tafuta kazi...">
-
-</div>
-
-</div>
-
+    </div>
 
 
-<div class="container">
+    <p class="tagline">
+        Unganishwa na Fursa. Jenga Kazi Yako.
+    </p>
 
+
+    <div class="search">
+
+        <input 
+        type="search"
+        id="search-job"
+        placeholder="🔍 Tafuta kazi..."
+        >
+
+    </div>
+
+
+</header>
+
+
+
+<!-- MAIN CONTENT -->
+
+<main class="container">
+
+
+<section>
 
 <h2 class="title">
 🔥 Kazi Mpya
 </h2>
 
 
+<div id="jobs-container">
+
+
+<!-- Jobs zitatoka Supabase hapa -->
+
+
 <div class="job-card">
+
 
 <h3>
 Software Developer
 </h3>
 
+
 <p>
 ABC Technology
 </p>
+
 
 <p class="location">
 📍 Dar es Salaam
 </p>
 
+
+<p>
+💻 IT
+</p>
+
+
 <button class="btn">
 Apply Now
 </button>
 
+
 </div>
+
 
 
 
 
 <div class="job-card">
 
+
 <h3>
 Marketing Intern
 </h3>
+
 
 <p>
 KaziPro Company
 </p>
 
+
 <p class="location">
 📍 Arusha
 </p>
+
+
+<p>
+📢 Marketing
+</p>
+
 
 <button class="btn">
 Apply Now
 </button>
 
+
+</div>
+
+
+
+</div>
+
+</section>
+
+
+
+
+
+<section class="categories">
+
+
+<h2>
+🚀 Tafuta kwa Category
+</h2>
+
+
+<div class="category-grid">
+
+
+<div class="category">
+💻 IT
+</div>
+
+
+<div class="category">
+🏥 Health
+</div>
+
+
+<div class="category">
+📊 Business
+</div>
+
+
+<div class="category">
+🌱 Agriculture
 </div>
 
 
 </div>
 
+
+</section>
+
+
+
+</main>
+
+
+
+
+
+<!-- BOTTOM NAVIGATION -->
 
 
 <nav class="bottom-nav">
 
 
-<div class="nav-item active">
+<a href="index.html" class="nav-item active">
+
+<span>
 🏠
-<span>Home</span>
-</div>
+</span>
+
+Home
+
+</a>
 
 
-<div class="nav-item">
+
+
+<a href="jobs.html" class="nav-item">
+
+<span>
 🔍
-<span>Jobs</span>
-</div>
+</span>
+
+Jobs
+
+</a>
 
 
-<div class="nav-item">
+
+
+
+<a href="applications.html" class="nav-item">
+
+<span>
 📄
-<span>Apply</span>
-</div>
+</span>
+
+Apply
+
+</a>
 
 
-<div class="nav-item">
+
+
+
+<a href="inbox.html" class="nav-item">
+
+<span>
 💬
-<span>Inbox</span>
-</div>
+</span>
+
+Inbox
+
+</a>
 
 
-<div class="nav-item">
+
+
+
+<a href="profile.html" class="nav-item">
+
+<span>
 👤
-<span>Profile</span>
-</div>
+</span>
+
+Profile
+
+</a>
+
+
 
 
 </nav>
 
 
+
+
+
+<script type="module" src="js/app.js"></script>
+
+
 </body>
-  </html>
+
+</html>
